@@ -58,6 +58,6 @@ app.use("/campGround",campgroundRoutes);
 app.use("/campGround/:id/comments",commentRoutes);
 
 //setting up the server
-app.listen(3000, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
 	console.log("server started");
 })
