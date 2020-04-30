@@ -1,0 +1,17 @@
+<%- include('../partials/header'); -%>
+
+<div class="container">
+	<h1 style="text-align: center">
+		Create a new Camp Ground.
+	</h1>
+	<div style="width: 30%; margin: 25px auto;">
+	<form action="/campGround" method= "post">
+		<div class="form-group"><input class="form-control" type= "text" name= "name" placeholder="enter name"></div>
+		<div class="form-group"><input class="form-control" type= "text" name= "image" placeholder= "enter Image Url"></div>
+		<div class="form-group"><input class="form-control" type= "text" name= "description" placeholder= "enter the description"></div>
+		<div class="form-group"><button class="btn btn-lg btn-outline-primary  btn-block">submit</button></div>
+	</form>
+	</div>
+</div>
+
+<%- include('../partials/footer'); -%>

@@ -1,0 +1,10 @@
+body{
+}
+
+.card .caption{
+	padding: 9px;
+}
+
+#delete_post{
+	display: inline;
+}
