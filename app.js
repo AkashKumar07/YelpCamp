@@ -18,7 +18,11 @@ var indexRoutes = require("./routes/index");
 
 //configuring the app
 //mongoose.connect("mongodb://localhost/yelp_camp",{useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect("mongodb+srv://shinchan:password051@yelpcamp-ddufq.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://shinchan:password051@yelpcamp-ddufq.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true, useCreateIndex: true}).then(() =>{
+	console.log("connected to db");
+}).catch(err => {
+	console.log('ERROR', err.message);
+});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs" );
 app.use(express.static(__dirname+ "/public"));
