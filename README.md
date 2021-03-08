@@ -9,10 +9,4 @@ You can either clone or download the zip file of the repository. After that, you
 #### node index.js
 To start the node.js server on the local machine.
 
-## npm packages used
-- mongodb : for data storage.
-- node.js
-- ejs: embbeded javascript for creating the html and css page
-- express.js
-
 ###### You can also visit the website at https://cryptic-eyrie-16174.herokuapp.com/
